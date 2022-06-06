@@ -48,29 +48,33 @@ span {
 */
 
 .container {
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 2em;
-  margin: 2em;
+  width: 70%;
+  margin: 2em auto;
 }
 
 .card {
   grid-column: 2;
-  grid-gap: 1em;
-  padding: 1em;
+  grid-gap: 1.5em;
+  padding: 1.5em;
   text-align: left;
 }
 
 p.date {
   font-size: 0.75rem;
   margin-bottom: 0.5em;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: rgb(207, 221, 221);
 }
 
 h3 {
   margin: 0;
   font-size: 1.5rem;
   margin-bottom: 0.5em;
+  color: azure;
 }
 
-body {
-  color: azure;
+p {
+  letter-spacing: 0.1em;
+  color: rgb(226, 240, 240);
 }
