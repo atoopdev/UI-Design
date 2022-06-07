@@ -13,6 +13,7 @@ body {
   color: white;
   font-family: "Nunito";
   grid-gap: 0.5em;
+  font-size: 16px;
 }
 sidebar {
   background: #1d3154;
@@ -57,14 +58,29 @@ span {
 
 body {
   grid-gap: auto; /* Improve the white space */
+  color: #1d3154;
 }
 
 .content {
-  background: auto; /* Improve the color/contrast */
-  padding: auto; /* Improve the white space */
+  background: #f6f8ff; /* Improve the color/contrast */
+  padding: 1em; /* Improve the white space */
+  margin: 1em;
+}
+
+h3 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #23ce6b;
 }
 
 h1 {
-  margin-left: 1em; /* Improve the alignment */
-  font-size: auto; /* Improve the visual hierarchy */
+  margin: 1em 0.5em; /* Improve the alignment */
+  font-size: 3rem; /* Improve the visual hierarchy */
+  color: #f6f8ff;
+}
+
+.highlight {
+  color: #23ce6b;
+  font-size: 1.25rem;
+  font-weight: 700;
 }
