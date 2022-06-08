@@ -14,6 +14,11 @@ body{
     place-content: center;
     /* aligns h1 */
     /* text-align: center; */
+    /* avoid absolute black */
+    /* background: #1c1c1c; */
+    /* via https://cssgradient.io/ */
+    background: linear-gradient(0deg, rgba(34,34,34,1) 32%, rgba(28,28,28,1) 32%, rgba(28,28,28,1) 100%);
+    color: white;
 }
 
 h1{
@@ -24,6 +29,23 @@ h1{
 p{
     font-size: 1.2em;
     margin-bottom: .5em;
+    text-transform: uppercase;
+}
+
+span{
+    /* color: #71AE21; */
+    position: relative;
+}
+
+/* custom underline slightly offset */
+span:before{
+position: absolute;
+content: '';
+height: .2em;
+width: 80%;
+bottom: .1em;
+z-index: -1;
+background: #71AE21;
 }
 
 /*
