@@ -21,8 +21,7 @@ body{
     max-width: 800px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    align-items:flex-start;
     margin: 6em;
 }
 
@@ -51,15 +50,17 @@ h1{
 
 p{
     line-height: 1.75em;
-    align-self: center;
+    padding-left: 2em;
+    border-left: 4px solid gray;
 }
 
 @media (min-width: 700px){
-   .container{
+    /* delete to keep single col design */
+   /* .container{
     display: grid;
     grid-template-columns: 350px 1fr;
     grid-gap: 1.5em;
-   } 
+   }  */
 
    h1{
        font-size:3rem;
