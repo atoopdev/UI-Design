@@ -16,11 +16,13 @@ body{
 
 
 .container{
-    border: 1px solid black;
-    min-width: 700px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 1.5em;
+    /* border: 1px solid darkgrey; */
+    min-width: 300px;
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     margin: 6em;
 }
 
@@ -32,18 +34,18 @@ span{
 }
 span:before {
     content: '1:30 PM';
-    font-size: 8em;
+    font-size: 5em;
     position: absolute;
     color: #F4F4F4;
     z-index: -1;
     white-space: nowrap;
-    left: 20%;
-    top: 35%;
+    left: 15%;
+    top: 45%;
 }
 
 h1{
     color:black;
-    font-size: 3rem;
+    font-size: 1.5rem;
     text-align: right;
 }
 
@@ -52,6 +54,28 @@ p{
     align-self: center;
 }
 
+@media (min-width: 700px){
+   .container{
+    display: grid;
+    grid-template-columns: 350px 1fr;
+    grid-gap: 1.5em;
+   } 
+
+   h1{
+       font-size:3rem;
+   }
+
+   span:before {
+    content: '1:30 PM';
+    font-size: 8em;
+    position: absolute;
+    color: #F4F4F4;
+    z-index: -1;
+    white-space: nowrap;
+    left: 20%;
+    top: 35%;
+}
+}
 /*
 
 - White Space
