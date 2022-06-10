@@ -1,39 +1,75 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap');
 
+* {
+    box-sizing: border-box;
+  }
+
 html, body {
     margin: 0;
     padding: 0;
+    height: 100vh;
 }
 
 body {
-    height: 100vh;
-    width: 100vw;
+    
+    /* width: 100vw; */
     font-family: 'Montserrat';
     /* make pic darker to improve contrast */
     background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)) , url('./gabin-vallet-J154nEkpzlQ-unsplash.jpg');
     background-size: cover;
     color: white;
+    display: flex;
+    justify-content: center;
 }
 
 .container{
     width: 80%;
-    margin: auto auto;
-    padding: 2em;
+    padding: 1.5em;
     display: flex;
-    justify-content:center;
-    align-items: center;
-    border: 1px solid white;
+    flex-direction: column;
+    
+    
+    /* border: 1px solid white; */
 }
 
 h1{
-    font-size: 4rem;
+    font-size: 4.5rem;
+    padding-right: 0.5em;
 }
 
 p{
-    border-left: 4px solid #046CA9;
+    border-left: 4px solid #B6A307;
     padding-left: .5em;
     font-size: 2rem;
 }
+
+@media (min-width: 600px){
+    .container{
+        width: 60%;
+        display: grid;
+        grid-gap:0.5em;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr; 
+        align-self: center;
+    }
+
+    p{
+        align-self: center;
+    }
+}
+
+@media (min-width: 1000px){
+
+    h1{
+        font-size: 4rem;
+    }
+
+    p{
+        font-size:2rem;
+    }
+
+}
+
 
 /*
 
@@ -46,3 +82,4 @@ p{
 - Visual Hierarchy
 
 */
+
