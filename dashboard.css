@@ -57,13 +57,13 @@ span {
 */
 
 body {
-  grid-gap: auto; /* Improve the white space */
+  grid-gap: 2em; /* Improve the white space */
   color: #1d3154;
 }
 
 .content {
   background: #f6f8ff; /* Improve the color/contrast */
-  padding: 1em; /* Improve the white space */
+  padding: 1.5em; /* Improve the white space */
   margin: 1em;
 }
 
@@ -83,4 +83,5 @@ h1 {
   color: #23ce6b;
   font-size: 1.25rem;
   font-weight: 700;
+  margin-top: 0.5em;
 }
